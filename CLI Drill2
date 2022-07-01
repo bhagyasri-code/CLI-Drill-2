@@ -1,0 +1,55 @@
+wget https://raw.githubusercontent.com/bobdeng/owlreader/master/ERead/assets/books/Harry%20Potter%20and%20the%20Goblet%20of%20Fire.txt> Harry\ Potter\ and\ the\ Goblet\ of\ Fire.txt
+cd..
+cat Harry\ Potter\ and\ the\ Goblet\ of\ Fire.txt | head -n 3
+cd..
+cat Harry\ Potter\ and\ the\ Goblet\ of\ Fire.txt |tail -n 10
+cd..
+grep -o -i Harry Harry\ Potter\ and\ the\ Goblet\ of\ Fire.txt | wc -l
+grep -o -i Ron Harry\ Potter\ and\ the\ Goblet\ of\ Fire.txt | wc -l
+grep -o -i Hermione Harry\ Potter\ and\ the\ Goblet\ of\ Fire.txt | wc -l
+grep -o -i Dumbledore Harry\ Potter\ and\ the\ Goblet\ of\ Fire.txt | wc -l
+cd...
+cat  Harry\ Potter\ and\ the\ Goblet\ of\ Fire.txt|head -n 200|tail -n 100
+cd ...
+tr ' ' '\n' < Harry\ Potter\ and\ the\ Goblet\ of\ Fire.txt | sort | uniq -c | wc -l
+cd......
+
+pid: pidof chrome, ppid: pidof chrome | ps -o ppid=
+cd...
+killall chrome
+cd..
+ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu |head -n 4
+cd..
+ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem |head -n 4
+cd...
+python3 -m http.server 8000
+cd..
+ctrl c
+gnome-terminal & exit
+cd..
+sudo python3 -m http.server 90
+cd..
+netstat -a |more
+cd..
+netstat -p | grep 5432 
+cd..
+
+sudo apt install htop
+sudo apt install vim
+sudo apt install nginx
+cd..
+sudo apt remove nginx
+cd..
+
+ip addr
+cd..
+nslookup >google.com
+cd..
+if curl -s --head  --request GET www.google.com | grep "200 OK" > /dev/null ; then
+    echo "Internet is present"
+else
+    echo "Internet isn't present"
+fi
+cd..
+which node
+which code
